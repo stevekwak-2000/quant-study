@@ -1,0 +1,22 @@
+[project]
+name = "quant-study"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "ccxt>=4.5.73",
+    "finance-datareader>=0.9.202",
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.1",
+    "pandas>=3.0.5",
+    "pyupbit>=0.2.34",
+]
+
+[project.scripts]
+quant-study = "quant_study:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
