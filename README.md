@@ -18,3 +18,10 @@
 ## 노트북
 
 - `hello_quant.ipynb` — 삼성전자 주가, BTC/KRW 시세 차트
+- `01_pandas_basics.ipynb` — 1단계 학습 노트북 (인덱싱, 수익률, 리샘플링, 롤링, shift, 여러 종목, groupby + 연습문제)
+- `01_pandas_solutions.ipynb` — 1단계 연습문제 정답
+
+## 데이터
+
+`quant_study.data.load_price(code, start)`로 가격을 불러옵니다. 처음 한 번만 FinanceDataReader로 받고
+`data/`(git 제외)에 CSV로 저장해 재사용합니다. 최신 데이터가 필요하면 `refresh=True`.
